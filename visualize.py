@@ -161,11 +161,15 @@ def plot_figure2(stats):
     ax2.set_ylabel("Annualized Carbon Footprint\n(Tons $CO_2e$ / km / year)")
     ax2.set_title("b. Environmental Impact (LCA)", loc='left', fontweight='bold')
     
+    ylo, yhi = ax2.get_ylim()
+    # Use a small data-space offset so each label sits just above its bar (and error cap)
+    label_offset = 0.02 * (yhi - ylo) if yhi > ylo else 0.02
     for i, bar in enumerate(bars2):
         height = bar.get_height()
-        ax2.text(bar.get_x() + bar.get_width()/2., height + 0.2,
-                f'{height:.1f}', ha='center', va='bottom', fontsize=7, fontweight='bold')
-    ylo, yhi = ax2.get_ylim()
+        # Place label just above bar top + error bar
+        y_pos = height + (annual_err[i] if i < len(annual_err) else 0) + label_offset
+        ax2.text(bar.get_x() + bar.get_width()/2., y_pos,
+                f'{height:.2f}', ha='center', va='bottom', fontsize=7, fontweight='bold')
     ax2.set_ylim(ylo, ylo + 1.2 * (yhi - ylo))
 
     plt.savefig(f"{OUTPUT_DIR}figure2.svg")
