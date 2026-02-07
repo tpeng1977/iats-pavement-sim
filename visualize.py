@@ -24,7 +24,7 @@ if not os.path.exists(OUTPUT_DIR):
 # Binder content in the asphalt layer is approximately 4--6% by weight of mix,
 # with the remainder predominantly aggregate (NCHRP Manual for Design of HMA).
 def calculate_lca(lifespans, lifespans_err):
-    CO2_PER_KM = 90.0  # Tons CO2e per km (embodied carbon, amortized over lifespan)
+    CO2_PER_KM = 4.5   # Tons CO2e per km (binder only: 50 kg CO2e/t binder × binder mass, binder ~4–6% of mix; amortized over lifespan)
     BASELINE_LIFE = 15.0  # Years
     
     annual_co2 = []

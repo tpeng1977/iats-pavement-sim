@@ -99,8 +99,8 @@ Channelized sensitivity (Group F) uses a narrower non-AV lateral distribution (�
 Implemented in **`visualize.py`** only (not in C++):
 
 - **Functional unit**: 1 km of standard lane (3.75 m width, 0.2 m depth).
-- **Binder content**: ~4–6% by weight of mix; remainder predominantly aggregate (NCHRP Manual for Design of HMA).
-- **Embodied carbon**: 90 tons CO₂e per km (from 50 kg CO₂e/t asphalt × mix mass); amortized over **effective lifespan** (damage-based relative life × 15 years).
+- **Binder content**: Binder content in the asphalt layer is approximately 4–6% by weight of mix, with the remainder being predominantly aggregate [NCHRP Report 673, 2014].
+- **Embodied carbon**: ~4–5 tons CO₂e per km (from 50 kg CO₂e/t **binder** × binder mass; binder is ~4–6% of mix, so much lower than applying a per-tonne factor to full mix); amortized over **effective lifespan** (damage-based relative life × 15 years).
 - **Annualized footprint**: `CO2_PER_KM / actual_life` (tons CO₂e/km/year); used for bar charts and mixed-traffic curves.
 
 ## Citation
