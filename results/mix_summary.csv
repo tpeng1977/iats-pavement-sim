@@ -1,0 +1,16 @@
+mode,pct,mean,std
+MixPrecision,0,7.18468e+14,4.67108e+12
+MixFeedback,0,7.18468e+14,4.67108e+12
+MixFeedbackAvoidCenter,0,7.18468e+14,4.67108e+12
+MixPrecision,25,1.14039e+15,3.25409e+12
+MixFeedback,25,6.50718e+14,2.13196e+11
+MixFeedbackAvoidCenter,25,6.73888e+14,7.34794e+11
+MixPrecision,50,1.56383e+15,5.29822e+12
+MixFeedback,50,6.41838e+14,1.69895e+11
+MixFeedbackAvoidCenter,50,7.1646e+14,1.264e+12
+MixPrecision,75,1.98913e+15,4.23697e+12
+MixFeedback,75,6.35731e+14,2.47689e+11
+MixFeedbackAvoidCenter,75,7.61344e+14,1.07642e+12
+MixPrecision,100,2.40979e+15,7.03409e+11
+MixFeedback,100,6.30928e+14,7.57729e+10
+MixFeedbackAvoidCenter,100,8.07597e+14,2.21503e+11
